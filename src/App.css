@@ -2,18 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
+.body{
+  overflow: hidden;
+}
+.nav{
+  margin-right: 20px;
+}
+
 .container {
-height: 5vh;
+height: 10.8vh;
 width: 216vh;
 display: flex;
-justify-content: flex-end;
+justify-content: space-around;
+align-items: center;
+background-color: #219ebc;
+border-bottom:2px solid black;
 }
 .content {
   display: flex;
   justify-content: space-between;
-  width: 35vh;
+  width: 100vh;
   margin-right: 20px;
+  font-weight: bold;
+}
+.logo {
+  width: 150px;
+}
+.content div {
+  border-radius: 5px;
+  font-size: 15px bold;
+  height: 30px;
 }
 .navBar{
   border: 1px solid white;
@@ -27,21 +47,15 @@ justify-content: flex-end;
   background-color: #e3d5ca;
 }
 .btn {
-  width: 10vh;
+  width: 11vh;
+  height: 5vh;
   border: none;
   border-radius: 0px 20px 20px 0px;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: bold;
   color: white;
   
 }
-/* .crdSect{
-  display: flex;
-  flex-direction: row;
-  width: 216vh;
-  height: 50vh;
-  justify-content: space-around;
-  margin-top: 50px;
-} */
 .crdSect{
   display: grid;
   justify-content: center;
@@ -51,18 +65,9 @@ justify-content: flex-end;
   grid-template-areas: 
   'card1 card2 card3'
   'card4 card5 card6';
-  gap: 100px;
+  gap: 70px;
   margin-top: 50px;
 }
-/* .crdSect div {
-  border: 1px solid white;
-  text-align: center;
-  width: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #eae2b7;
-} */
 .card{
   background-color: #eae2b7;
   border-radius: 20px;
