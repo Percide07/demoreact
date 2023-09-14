@@ -1,42 +1,53 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+height: 5vh;
+width: 216vh;
+display: flex;
+justify-content: flex-end;
+}
+.content {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 35vh;
+}
+.navBar{
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 45vh;
+}
+.navBar div{
+  background-color: #e3d5ca;
+}
+.btn {
+  width: 10vh;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 20px;
+  color: white;
+  
+}
+.crdSect{
+  display: flex;
+  flex-direction: row;
+  width: 216vh;
+  height: 50vh;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.crdSect div {
+  border: 1px solid white;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eae2b7;
 }
